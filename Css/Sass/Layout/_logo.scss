@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    & .logo{
+        justify-items: center;
+        & img{
+            width: 70%;
+            margin: 20px 0;
+        }
+    }
+    & i{
+        display: block;
+        align-self: center;
+    }
+}

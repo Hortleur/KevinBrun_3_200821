@@ -43,4 +43,22 @@ td, th {
   padding: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+header {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header .logo {
+  justify-items: center;
+}
+
+header .logo img {
+  width: 70%;
+  margin: 20px 0;
+}
+
+header i {
+  display: block;
+  align-self: center;
+}
+/*# sourceMappingURL=Main.css.map */
