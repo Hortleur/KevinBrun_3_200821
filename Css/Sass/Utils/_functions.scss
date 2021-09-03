@@ -1,0 +1,7 @@
+@function visible($page){
+    @if page($page)== "index.html" {
+        @return $fleche("cacher");
+    }@else{
+        @return $fleche("visible")
+    }
+}

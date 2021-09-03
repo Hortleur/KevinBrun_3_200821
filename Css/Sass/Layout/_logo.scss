@@ -1,15 +1,14 @@
 header{
-    display: flex;
-    flex-flow: row nowrap;
-    & .logo{
-        justify-items: center;
-        & img{
-            width: 70%;
-            margin: 20px 0;
-        }
-    }
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: 2px solid transparent;
+    @include header-shadow;
     & i{
-        display: block;
+        visibility: $cacher;
         align-self: center;
+    }
+    & .logo{
+        width: 120%;
+        margin-top: 10px;
     }
 }

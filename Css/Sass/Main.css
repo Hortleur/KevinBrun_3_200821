@@ -43,22 +43,57 @@ td, th {
   padding: 0;
 }
 
-header {
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-family: "Shrikhand", sans-serif;
+}
+
+ol {
+  list-style: none;
+}
+
+li {
   display: flex;
-  flex-flow: row nowrap;
+  margin-top: 5px;
 }
 
-header .logo {
-  justify-items: center;
+li .fas {
+  margin-right: 5px;
 }
 
-header .logo img {
-  width: 70%;
-  margin: 20px 0;
+/*Colors*/
+/*fleche retour*/
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 2px solid transparent;
+  box-shadow: 0 0 6px 2px rgba(128, 128, 128, 0.637);
 }
 
 header i {
-  display: block;
+  visibility: hidden;
   align-self: center;
+}
+
+header .logo {
+  width: 120%;
+  margin-top: 10px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+footer .footer {
+  margin-left: 10px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=Main.css.map */
