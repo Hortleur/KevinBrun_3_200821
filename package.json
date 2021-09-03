@@ -1,0 +1,11 @@
+{
+  "name": "kevinbrun_3_280821",
+  "version": "1.0.0",
+  "description": "Projet 3 Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/sass/main.scss:./css/style.css"
+  },
+  "author": "Brun Kevin",
+  "license": "ISC"
+}
