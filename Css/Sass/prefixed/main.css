@@ -1,0 +1,158 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-family: "Shrikhand", sans-serif;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+ol {
+  list-style: none;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+li .fas {
+  margin-right: 5px;
+}
+
+/*Colors*/
+/*fleche retour*/
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 2px solid transparent;
+  -webkit-box-shadow: 0 0 6px 2px black;
+          box-shadow: 0 0 6px 2px black;
+}
+
+header i {
+  visibility: hidden;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header .logo {
+  width: 140%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+footer .footer {
+  margin-left: 10px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.body {
+  background-color: #e6e6e6;
+}
+
+.search {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  background-color: #eaeaea;
+}
+
+.search label {
+  margin-right: 10px;
+}
+
+.search input {
+  border: none;
+  background-color: #eaeaea;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL0Jhc2UvX21pbmlyZXNldC5zY3NzIiwiLi4vbWFpbi5jc3MiLCIuLi9CYXNlL19mb250LnNjc3MiLCIuLi9jb21wb25lbnRzL19saXN0cy5zY3NzIiwiLi4vdXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vbGF5b3V0L19sb2dvLnNjc3MiLCIuLi9VdGlscy9fbWl4aW5zLnNjc3MiLCIuLi9sYXlvdXQvX2Zvb3Rlci5zY3NzIiwiLi4vTWFpbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDBFQUFBO0FBQTJFO0VBQXlHLFNBQVE7RUFBQyxVQUFTO0FDSXRNOztBREp1TTtFQUFrQixlQUFjO0VBQUMsbUJBQWtCO0FDUzFQOztBRFQyUDtFQUFHLGdCQUFlO0FDYTdROztBRGI4UTtFQUFvQixTQUFRO0FDaUIxUzs7QURqQjJTO0VBQUssOEJBQXFCO1VBQXJCLHNCQUFxQjtBQ3FCclU7O0FEckJzVTtFQUFxQiwyQkFBa0I7VUFBbEIsbUJBQWtCO0FDeUI3Vzs7QUR6QjhXO0VBQVUsWUFBVztFQUFDLGVBQWM7QUM4QmxaOztBRDlCbVo7RUFBTyxTQUFRO0FDa0NsYTs7QURsQ21hO0VBQU0seUJBQXdCO0VBQUMsaUJBQWdCO0FDdUNsZDs7QUR2Q21kO0VBQU0sVUFBUztBQzJDbGU7O0FDM0NBO0VBQ0ksaUNBQWlDO0FEOENyQzs7QUM1Q0E7RUFDSSxvQ0FBb0M7QUQrQ3hDOztBQzdDQTtFQUNJLGlDQUFpQztFQUNqQyxpQkFBaUI7RUFDakIsWUFBWTtBRGdEaEI7O0FDbkRBO0VBQ0ksaUNBQWlDO0VBQ2pDLGlCQUFpQjtFQUNqQixZQUFZO0FEZ0RoQjs7QUNuREE7RUFDSSxpQ0FBaUM7RUFDakMsaUJBQWlCO0VBQ2pCLFlBQVk7QURnRGhCOztBQ25EQTtFQUNJLGlDQUFpQztFQUNqQyxpQkFBaUI7RUFDakIsWUFBWTtBRGdEaEI7O0FDbkRBO0VBQ0ksaUNBQWlDO0VBQ2pDLGlCQUFpQjtFQUNqQixZQUFZO0FEZ0RoQjs7QUV6REE7RUFDSSxnQkFBZ0I7QUY0RHBCOztBRTFEQTtFQUNJLG9CQUFhO0VBQWIsb0JBQWE7RUFBYixhQUFhO0VBQ2IsZUFBZTtBRjZEbkI7O0FFM0RBO0VBQ0ksaUJBQWlCO0FGOERyQjs7QUd0RUEsU0FBQTtBQU9BLGdCQUFBO0FDUEE7RUFDSSxhQUFhO0VBQ2IscUNBQW9DO0VBQ3BDLG9DQUFvQztFQ0ZwQyxxQ0FBb0M7VUFBcEMsNkJBQW9DO0FMOEV4Qzs7QUkvRUE7RUFNUSxrQkRHTztFQ0ZQLDJCQUFrQjtNQUFsQixrQkFBa0I7QUo2RTFCOztBSXBGQTtFQVVRLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLDJCQUFrQjtNQUFsQixrQkFBa0I7QUo4RTFCOztBTTNGQTtFQUNJLFlBQVk7RUFDWix1QkhFVTtFR0RWLGtCQUFrQjtBTjhGdEI7O0FNakdBO0VBS1EsaUJBQWlCO0FOZ0d6Qjs7QU03RkE7RUFFUSxtQkFBbUI7QU4rRjNCOztBT2pHQTtFQUNJLHlCSkpzQjtBSHdHMUI7O0FPakdBO0VBQ0ksZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixvQ0FBb0M7RUFDcEMseUJBQXlCO0FQb0c3Qjs7QU94R0E7RUFNUSxrQkFBa0I7QVBzRzFCOztBTzVHQTtFQVNRLFlBQVk7RUFDWix5QkFBeUI7QVB1R2pDIiwiZmlsZSI6Im1haW4uY3NzIn0= */

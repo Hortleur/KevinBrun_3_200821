@@ -51,6 +51,12 @@ body {
   font-family: "Shrikhand", sans-serif;
 }
 
+::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
 ol {
   list-style: none;
 }
@@ -67,20 +73,23 @@ li .fas {
 /*Colors*/
 /*fleche retour*/
 header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   border-bottom: 2px solid transparent;
-  box-shadow: 0 0 6px 2px rgba(128, 128, 128, 0.637);
+  box-shadow: 0 0 6px 2px black;
 }
 
 header i {
-  visibility: hidden;
+  display: block;
+  visibility: visible;
   align-self: center;
+  text-align: left;
 }
 
 header .logo {
-  width: 120%;
+  display: block;
   margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center;
 }
 
 footer {
@@ -95,5 +104,25 @@ footer .footer {
 
 .footer h4 {
   margin-bottom: 10px;
+}
+
+.body {
+  background-color: #e6e6e6;
+}
+
+.search {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  background-color: #eaeaea;
+}
+
+.search label {
+  margin-right: 10px;
+}
+
+.search input {
+  border: none;
+  background-color: #eaeaea;
 }
 /*# sourceMappingURL=Main.css.map */

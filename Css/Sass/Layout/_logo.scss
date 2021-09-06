@@ -1,14 +1,17 @@
 header{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
     border-bottom: 2px solid transparent;
     @include header-shadow;
     & i{
-        visibility: $cacher;
+        display: block;
+        visibility: $visible;
         align-self: center;
+        text-align: left;
     }
     & .logo{
-        width: 120%;
+        display: block;
         margin-top: 10px;
+        margin-bottom: 10px;
+        align-self: center;
     }
 }

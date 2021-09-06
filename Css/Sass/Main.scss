@@ -4,5 +4,22 @@
 @import "utils/variables";
 @import "Utils/mixins";
 @import "layout/logo";
+@import "layout/footer";
 
-@import "layout/footer"
+.body{
+    background-color: $body-color;
+}
+
+.search{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    background-color: #eaeaea;
+    label{
+        margin-right: 10px;
+    }
+    input{
+        border: none;
+        background-color: #eaeaea;
+    }
+}

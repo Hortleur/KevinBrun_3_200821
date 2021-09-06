@@ -4,3 +4,8 @@ body{
 .title{
     font-family: "Shrikhand", sans-serif;
 }
+::placeholder{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: black;
+}
