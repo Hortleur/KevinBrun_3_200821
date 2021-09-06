@@ -1,3 +1,13 @@
 @mixin header-shadow {
     box-shadow: 0 0 6px 2px rgb(0, 0, 0);
 }
+@mixin listAcceuil {
+    display: flex;
+        align-items: center;
+        margin: 10px 0;
+        border: none;
+        background-color: $back;
+        border-radius: 30px;
+        width: 90%;
+        height: 90px;
+}
