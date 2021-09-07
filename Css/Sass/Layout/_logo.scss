@@ -2,11 +2,13 @@ header{
     display: flex;
     border-bottom: 2px solid transparent;
     @include header-shadow;
-    & i{
+    & a{
         display: block;
-        visibility: $cacher;
+        visibility: $visible;
         align-self: center;
         text-align: left;
+        color: black;
+        padding-left: 20px;
     }
     & .logo{
         display: block;

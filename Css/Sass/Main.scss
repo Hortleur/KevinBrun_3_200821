@@ -1,7 +1,7 @@
 @import "Base/minireset";
 @import "Base/font";
-@import "base/titles";
 @import "utils/variables";
+@import "base/titles";
 @import "Utils/mixins";
 @import "layout/logo";
 @import "layout/footer";
@@ -131,16 +131,13 @@ main{
         font-size: 1.8rem;
     }
 }
-.paletteImg{
+.restoImg{
     margin-bottom: -40px;
     z-index: -1;
     position: relative;
 }
 .menuPart{
     margin: 20px 0;
-    h5{
-        margin: 30px 0px;
-    }
 }
 .menuItem{
     border: 2px solid transparent;

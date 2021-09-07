@@ -6,6 +6,21 @@ h3{
     font-size: 1.2em;
     font-weight: bold;
 }
+h5{
+    margin: 30px 0px;
+    position: relative;
+}
+h5::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 20%;
+    height: 2px;
+    background-color: $third;
+    transform: scaleX(0.5);
+    transform-origin: left;
+}
 h6{
     font-weight: bold;
     margin-bottom: 5px;
