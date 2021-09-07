@@ -124,9 +124,8 @@ footer .footer {
 main {
   background-color: #f6f6f6;
   padding: 30px 10px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
-  transform: translateY(-50px);
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
 }
 
 .search {
@@ -265,6 +264,12 @@ main {
 
 .nomRestaurant i {
   font-size: 1.8rem;
+}
+
+.paletteImg {
+  margin-bottom: -40px;
+  z-index: -1;
+  position: relative;
 }
 
 .menuPart {
