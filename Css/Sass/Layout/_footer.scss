@@ -10,4 +10,12 @@ footer{
     h4{
         margin-bottom: 10px;
     }
+    li{
+        list-style: none;
+        display: flex;
+        margin-bottom: 5px;
+        i{
+            font-size: 0.8rem;
+        }
+    }
 }
