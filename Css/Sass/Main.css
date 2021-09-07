@@ -136,6 +136,10 @@ footer .footer {
   font-size: 0.8rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   background-color: #e6e6e6;
 }
@@ -194,6 +198,7 @@ main {
 .presentation button a {
   text-decoration: none;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .fonctionnement {
@@ -302,6 +307,16 @@ main {
   padding: 10px;
   margin-bottom: 10px;
   box-shadow: 0 0 6px 2px rgba(105, 103, 103, 0.24);
+  animation: fadeIn 1s ease-in both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .menuItem div {
@@ -310,6 +325,19 @@ main {
   align-items: baseline;
   font-size: 0.9rem;
   padding-right: 10px;
+}
+
+.menuItem h6, .menuItem div {
+  animation: slide 1s ease-in forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .prix {

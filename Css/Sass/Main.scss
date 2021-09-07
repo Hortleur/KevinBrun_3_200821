@@ -6,6 +6,10 @@
 @import "layout/logo";
 @import "layout/footer";
 
+html{
+    scroll-behavior: smooth;
+}
+
 .body{
     background-color: $body-color;
 }
@@ -56,6 +60,7 @@ main{
         a{
             text-decoration: none;
             color: white;
+            scroll-behavior: smooth;
         }
     }
 }
@@ -146,12 +151,19 @@ main{
     padding: 10px;
     margin-bottom: 10px;
     @include cardShadows;
+    @include fade;
+    @include delayMenuItem;
     div{
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         font-size: 0.9rem;
         padding-right: 10px;
+    }
+}
+.menuItem{
+    h6, div{
+        @include slide;
     }
 }
 .prix{
