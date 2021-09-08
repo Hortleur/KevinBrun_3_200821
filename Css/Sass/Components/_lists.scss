@@ -1,0 +1,17 @@
+.list{
+    li{
+        list-style: none;
+    }
+    li:nth-child(1) div{
+        animation-delay: 0s;
+    }
+    li:nth-child(2) div{
+        animation-delay: 0.15s;
+    }
+    li:nth-child(3) div{
+        animation-delay: 0.25s;
+    }
+    li:nth-child(4) div{
+        animation-delay: 0.35s;
+    }
+}

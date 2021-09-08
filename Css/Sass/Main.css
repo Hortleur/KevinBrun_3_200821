@@ -59,6 +59,26 @@ body {
 
 /*Colors*/
 /*fleche retour*/
+.list li {
+  list-style: none;
+}
+
+.list li:nth-child(1) div {
+  animation-delay: 0s;
+}
+
+.list li:nth-child(2) div {
+  animation-delay: 0.15s;
+}
+
+.list li:nth-child(3) div {
+  animation-delay: 0.25s;
+}
+
+.list li:nth-child(4) div {
+  animation-delay: 0.35s;
+}
+
 h1 {
   font-size: 1.5em;
   font-weight: bold;

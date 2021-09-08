@@ -1,6 +1,7 @@
 @import "Base/minireset";
 @import "Base/font";
 @import "utils/variables";
+@import "components/lists";
 @import "base/titles";
 @import "Utils/mixins";
 @import "layout/logo";
@@ -152,7 +153,6 @@ main{
     margin-bottom: 10px;
     @include cardShadows;
     @include fade;
-    @include delayMenuItem;
     div{
         display: flex;
         justify-content: space-between;

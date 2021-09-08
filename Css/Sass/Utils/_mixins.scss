@@ -36,12 +36,4 @@
         }
     }
 }
-@mixin delayMenuItem{
-    $i : 10;
-    @while $i>0{
-        .menuItem-#{$i}{
-            animation-delay: 500ms * $i;
-            $i: $i + 100;
-        }
-    }
-}
+
