@@ -124,6 +124,9 @@ main{
         i{
             font-size: 1.5em;
         }
+        i:hover{
+            @include heart;
+        }
     }
 }
 .nomRestaurant{

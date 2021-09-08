@@ -156,6 +156,12 @@ footer .footer {
   font-size: 0.8rem;
 }
 
+.footer a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -295,6 +301,30 @@ main {
 
 .restaurants .desc i {
   font-size: 1.5em;
+}
+
+.restaurants .desc i:hover {
+  animation: coeur 5s ease-in-out 0s 1 normal forwards;
+  transform-origin: center;
+}
+
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    background: radial-gradient(#FF79DA, #9356DC, transparent 85%);
+  }
 }
 
 .nomRestaurant {
