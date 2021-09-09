@@ -12,17 +12,6 @@
     text-align: center;
     text-decoration: none;
     padding: 15px 0;
-    &_hover{
-        animation: grand ease-in-out 2s forwards;
-        @keyframes grand {
-            0%{
-                scale: 0,0;
-            }
-            100%{
-                scale: 0.8,0.8;
-            }
-        }
-    }
 }
 .command{
     display: flex;

@@ -12,12 +12,16 @@
 html{
     scroll-behavior: smooth;
 }
-
-main{
+.mainPages{
     background-color: $back;
     padding: 30px 10px;
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.mainAccueil{
+    max-width: 1440px;
 }
 
 .search{
@@ -53,19 +57,32 @@ main{
     margin: 50px 0 50px 20px;
     display: flex;
     flex-flow: column nowrap;
-    ul{
-        & :hover{
-            background-color: lighten($prim, 35);
-            transition: 500ms;
-        }
-    }
+    background-color: white;
     li{
         @include listAcceuil;
-        i{
-            margin-right: 30px;
-        }
+    }
+    li:hover{
+        background-color: lighten($prim, 35);
+        transition: 500ms;
+    }
+    li:hover > div i{
+        color: $prim;
+        transition: 500ms;
     }
 }
+
+
+.fonctionnementContent{
+    display: flex;
+    i{
+        margin-right: 20px;
+        font-size: 1.2em;
+    }
+    p{
+        font-weight: bold
+    }
+}
+
 .num{
     @include num;
 }

@@ -30,4 +30,7 @@ footer{
         font-size: 0.7rem;
         margin-right: 5px;
     }
+    a:hover > p, a:hover > i{
+        color: $prim;
+    }
 }
