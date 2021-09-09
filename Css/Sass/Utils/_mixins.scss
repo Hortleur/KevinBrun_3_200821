@@ -73,10 +73,15 @@
         color: black;
         background-color: white;
         border-radius: 15px;
+        position: relative;
 }
 @mixin restaurants{
     background-color: $back;
     padding: 50px 20px;
+    .cards{
+        @include cards;
+        @include cardShadows;
+    }
 }
 @mixin num{
     transform: translateX(-10px);

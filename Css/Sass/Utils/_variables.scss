@@ -6,6 +6,7 @@ $footbg: black;
 $body-color: hsl(0,0%,90%);
 $back: #f6f6f6;
 $grad1: radial-gradient($second, $prim, transparent 85%);
+$loadcolor: linear-gradient($second, $prim, $third);
 
 /*fleche retour*/
 $visible: visible;

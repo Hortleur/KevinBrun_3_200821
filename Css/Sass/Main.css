@@ -137,6 +137,98 @@ header .logo {
   align-self: center;
 }
 
+.loader {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  font-size: 2rem;
+  font-family: "Shrikhand", sans-serif;
+  background-color: white;
+  opacity: 0.95;
+  color: black;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-shadow: 1px 1px 2px #9356DC, 0 0 1em #FF79DA, 0 0 0.2em #99E2D0;
+  animation: loading 5s forwards;
+}
+
+@keyframes loading {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.loader p {
+  animation: fade alternate, changecol alternate 3s both;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  37% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  87% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes changecol {
+  0% {
+    color: #9356DC;
+  }
+  12% {
+    color: #FF79DA;
+  }
+  25% {
+    color: #99E2D0;
+  }
+  37% {
+    color: #FF79DA;
+  }
+  50% {
+    color: #9356DC;
+  }
+  62% {
+    color: #FF79DA;
+  }
+  75% {
+    color: #99E2D0;
+  }
+  87% {
+    color: #FF79DA;
+  }
+  100% {
+    color: #9356DC;
+  }
+}
+
 .btn {
   margin-top: 20px;
   width: 50%;
@@ -151,6 +243,19 @@ header .logo {
   text-align: center;
   text-decoration: none;
   padding: 15px 0;
+}
+
+.btn_hover {
+  animation: grand ease-in-out 2s forwards;
+}
+
+@keyframes grand {
+  0% {
+    scale: 0,0;
+  }
+  100% {
+    scale: 0.8,0.8;
+  }
 }
 
 .command {
@@ -188,12 +293,17 @@ footer .footer {
   color: white;
 }
 
-html {
-  scroll-behavior: smooth;
+.footer .fa-utensils {
+  margin-right: 9px;
 }
 
-.body {
-  background-color: #e6e6e6;
+.footer .fa-hands-helping {
+  font-size: 0.7rem;
+  margin-right: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
@@ -286,6 +396,7 @@ main {
   color: black;
   background-color: white;
   border-radius: 15px;
+  position: relative;
   box-shadow: 0 0 6px 2px rgba(105, 103, 103, 0.24);
 }
 
@@ -300,6 +411,21 @@ main {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+.restaurants .nouveau {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 5px 10px;
+  background-color: #99E2D0;
+  border-radius: 3px;
+}
+
+.restaurants .nouveau p {
+  color: #278870;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 
 .restaurants .desc {
