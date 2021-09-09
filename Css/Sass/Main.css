@@ -68,15 +68,15 @@ body {
 }
 
 .list li:nth-child(2) div {
-  animation-delay: 0.15s;
-}
-
-.list li:nth-child(3) div {
   animation-delay: 0.25s;
 }
 
+.list li:nth-child(3) div {
+  animation-delay: 0.5s;
+}
+
 .list li:nth-child(4) div {
-  animation-delay: 0.35s;
+  animation-delay: 0.75s;
 }
 
 h1 {
@@ -130,6 +130,27 @@ header .logo {
   display: block;
   margin: 10px auto;
   align-self: center;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 50%;
+  font-size: 0.9em;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.command {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -208,23 +229,8 @@ main {
   padding: 0 20px;
 }
 
-.presentation button {
-  margin-top: 20px;
-  width: 50%;
+.presentation a {
   align-self: center;
-  font-size: 0.9em;
-  font-weight: bold;
-  height: 50px;
-  border-radius: 40px;
-  border: none;
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  margin-bottom: 40px;
-}
-
-.presentation button a {
-  text-decoration: none;
-  color: white;
-  scroll-behavior: smooth;
 }
 
 .fonctionnement {
@@ -350,6 +356,14 @@ main {
   margin: 20px 0;
 }
 
+@media screen and (min-width: 992px) {
+  .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+}
+
 .menuItem {
   border: 2px solid transparent;
   background-color: white;
@@ -375,6 +389,12 @@ main {
   align-items: baseline;
   font-size: 0.9rem;
   padding-right: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .menuItem {
+    width: 120%;
+  }
 }
 
 .menuItem h6, .menuItem div {

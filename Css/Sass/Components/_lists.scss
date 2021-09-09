@@ -6,12 +6,12 @@
         animation-delay: 0s;
     }
     li:nth-child(2) div{
-        animation-delay: 0.15s;
-    }
-    li:nth-child(3) div{
         animation-delay: 0.25s;
     }
+    li:nth-child(3) div{
+        animation-delay: 0.5s;
+    }
     li:nth-child(4) div{
-        animation-delay: 0.35s;
+        animation-delay: 0.75s;
     }
 }
