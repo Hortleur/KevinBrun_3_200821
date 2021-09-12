@@ -59,22 +59,6 @@ body {
 
 /*Colors*/
 /*fleche retour*/
-.menuPart .menuPart:nth-child(1) .menuItem {
-  animation-delay: 0s;
-}
-
-.menuPart .menuPart:nth-child(2) .menuItem {
-  animation-delay: 0.25s;
-}
-
-.menuPart .menuPart:nth-child(3) .menuItem {
-  animation-delay: 0.5s;
-}
-
-.menuPart .menuPart:nth-child(4) .menuItem {
-  animation-delay: 0.75s;
-}
-
 h1 {
   font-size: 1.4em;
   font-weight: bold;
@@ -609,5 +593,17 @@ html {
   color: white;
   transform: rotate(360deg);
   transition: 0.6s;
+}
+
+.item_1 {
+  animation-delay: 300ms;
+}
+
+.item_2 {
+  animation-delay: 600ms;
+}
+
+.item_3 {
+  animation-delay: 900ms;
 }
 /*# sourceMappingURL=Main.css.map */

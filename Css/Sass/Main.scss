@@ -212,6 +212,12 @@ html{
         transition:0.6s;
     }
 }
+
+@for $i from 1 to 4 {
+    .item_#{$i}{
+        animation-delay: 300ms * $i ;
+    }
+}
  
 
 
