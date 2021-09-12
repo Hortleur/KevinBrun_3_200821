@@ -5,7 +5,7 @@ $third: #99E2D0;
 $footbg: black;
 $body-color: hsl(0,0%,90%);
 $back: #f6f6f6;
-$grad1: radial-gradient($second, $prim, transparent 85%);
+$grad1: linear-gradient(160deg,$second, $prim);
 $loadcolor: linear-gradient($second, $prim, $third);
 
 /*fleche retour*/

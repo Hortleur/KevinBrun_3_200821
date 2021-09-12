@@ -149,29 +149,69 @@ html{
     }
 }
 .menuItem{
-    border: 2px solid transparent;
+    display: flex; 
+    justify-content: space-between;
     background-color: white;
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 15px;                
     margin-bottom: 10px;
+    line-height: 1.5;
     @include cardShadows;
     @include fade;
-    div{
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        font-size: 0.9rem;
-        padding-right: 10px;
-    }
     @media screen and (min-width: 992px) {
         width: 120%;
     }
 }
-.menuItem{
-    h6, div{
-        @include slide;
+.nomPlat{
+    display: flex;
+    flex-flow: column nowrap;
+    @include slide;
+    padding: 8px;
+    overflow: hidden;
+
+    h6, p{
+        white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    p{
+        font-size: 0.9em;
+    }
+}  
+.prix{
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    @include slide;
+    p{
+        align-self: flex-end;
+        padding-bottom: 8px;
     }
 }
-.prix{
-    font-weight: bold;
+.check{
+    width: 0;
+    overflow: hidden;
+    background-color: $third;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 10px;
+    transition: width 0.6s;
+    color: white;
+    i{
+        transition: 0.6s;
+        font-size: 1.4em;
+    }
 }
+.menuItem:hover .check{
+    width: 70px;
+    i{
+        color: white;
+        transform: rotate(360deg);
+        transition:0.6s;
+    }
+}
+ 
+
+

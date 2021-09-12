@@ -1,17 +1,14 @@
-.list{
-    li{
-        list-style: none;
-    }
-    li:nth-child(1) div{
+.menuPart{
+    .menuPart:nth-child(1) .menuItem{
         animation-delay: 0s;
     }
-    li:nth-child(2) div{
+    .menuPart:nth-child(2) .menuItem{
         animation-delay: 0.25s;
     }
-    li:nth-child(3) div{
+    .menuPart:nth-child(3) .menuItem{
         animation-delay: 0.5s;
     }
-    li:nth-child(4) div{
+    .menuPart:nth-child(4) .menuItem{
         animation-delay: 0.75s;
     }
 }
