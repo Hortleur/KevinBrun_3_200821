@@ -29,6 +29,8 @@ html{
     text-align: center;
     border-bottom: 2px solid transparent;
     background-color: #eaeaea;
+    position: relative;
+    z-index: -1;
     input{
         border: none;
         background-color: #eaeaea;

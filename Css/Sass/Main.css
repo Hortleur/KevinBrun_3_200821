@@ -98,8 +98,9 @@ h6 {
 
 header {
   display: flex;
-  border-bottom: 2px solid red;
-  box-shadow: 0 0 6px 2px black;
+  border-bottom: 2px solid transparent;
+  box-shadow: 0 0 4px 1px #747373;
+  z-index: 1;
 }
 
 header a {
@@ -228,7 +229,7 @@ header .logo {
 .btn:hover {
   opacity: 0.5;
   transition: 300ms;
-  box-shadow: 0 0 6px 2px black;
+  box-shadow: 0 0 4px 1px #747373;
 }
 
 .command {
@@ -301,6 +302,8 @@ html {
   text-align: center;
   border-bottom: 2px solid transparent;
   background-color: #eaeaea;
+  position: relative;
+  z-index: -1;
 }
 
 .search input {

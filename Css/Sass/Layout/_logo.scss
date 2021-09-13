@@ -1,7 +1,8 @@
 header{
     display: flex;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid transparent;
     @include header-shadow;
+    z-index: 1;
     a{
         display: block;
         visibility: $visible;
