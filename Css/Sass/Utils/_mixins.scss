@@ -60,6 +60,9 @@
     .cards{
         @include cards;
         @include cardShadows;
+        &:hover{
+            box-shadow: 0 0 6px 2px $third;
+        }
     }
 }
 @mixin num{

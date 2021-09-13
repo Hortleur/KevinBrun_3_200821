@@ -3,6 +3,8 @@ header{
     border-bottom: 2px solid transparent;
     @include header-shadow;
     z-index: 1;
+    position: relative;
+    padding-top: 10px;
     a{
         display: block;
         visibility: $visible;
@@ -15,5 +17,7 @@ header{
         display: block;
         margin: 10px auto;
         align-self: center;
+        
     }
 }
+
