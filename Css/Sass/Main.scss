@@ -120,17 +120,39 @@ html{
     }
 }
 .vide{
-    z-index: 1;
     position: absolute;
 }
 .plein{
-    z-index: 1;
     position: relative;
-    color: transparent;
+    color: transparent
 }
-.plein:hover{
-    color: red;
-    transition: 2s;
+.coeur:hover > .vide{
+    display: none;
+    transition-delay: 1s;
+}
+.coeur:hover > .plein{
+    animation: grandi 1s linear forwards;
+    transform-origin: bottom;
+    background: $grad1;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes grandi {
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(0.25);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .nomRestaurant{
     font-family: "Shrikhand", sans-serif;
