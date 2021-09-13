@@ -437,28 +437,20 @@ html {
   font-size: 1.5em;
 }
 
-.restaurants .desc i:hover {
-  animation: coeur 5s ease-in-out 0s 1 normal forwards;
-  transform-origin: center;
+.vide {
+  z-index: 1;
+  position: absolute;
 }
 
-@keyframes coeur {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-    background: linear-gradient(160deg, #FF79DA, #9356DC);
-  }
+.plein {
+  z-index: 1;
+  position: relative;
+  color: transparent;
+}
+
+.plein:hover {
+  color: red;
+  transition: 2s;
 }
 
 .nomRestaurant {

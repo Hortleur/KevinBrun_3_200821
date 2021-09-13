@@ -117,10 +117,20 @@ html{
         i{
             font-size: 1.5em;
         }
-        i:hover{
-            @include heart;
-        }
     }
+}
+.vide{
+    z-index: 1;
+    position: absolute;
+}
+.plein{
+    z-index: 1;
+    position: relative;
+    color: transparent;
+}
+.plein:hover{
+    color: red;
+    transition: 2s;
 }
 .nomRestaurant{
     font-family: "Shrikhand", sans-serif;

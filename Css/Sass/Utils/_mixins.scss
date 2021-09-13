@@ -37,28 +37,7 @@
     }
 }
 
-@mixin heart {
-    animation: coeur 5s ease-in-out 0s 1 normal forwards;
-    transform-origin: center;
-    @keyframes coeur {
-        0%{
-            opacity: 0;
-        }
-        25%{
-            opacity: 0.25;
-        }
-        50%{
-            opacity: 0.5;
-        }
-        75%{
-            opacity: 0.75;
-        }
-        100%{
-            opacity: 1;
-            background: $grad1;
-        }
-    }
-}
+
 @mixin img {
     width: 100%;
             height: 100%;
