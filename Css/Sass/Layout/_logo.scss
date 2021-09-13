@@ -1,7 +1,8 @@
 header{
     display: flex;
-    border-bottom: 2px solid transparent;
-    & a{
+    border-bottom: 2px solid red;
+    @include header-shadow;
+    a{
         display: block;
         visibility: $visible;
         align-self: center;
@@ -9,7 +10,7 @@ header{
         color: black;
         padding-left: 20px;
     }
-    & .logo{
+    .logo{
         display: block;
         margin: 10px auto;
         align-self: center;
