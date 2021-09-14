@@ -85,6 +85,12 @@ h5 {
   position: relative;
 }
 
+@media (min-width: 1200px) {
+  h5 {
+    text-align: center;
+  }
+}
+
 h5::after {
   content: "";
   position: absolute;
@@ -95,6 +101,12 @@ h5::after {
   background-color: #99E2D0;
   transform: scaleX(0.5);
   transform-origin: left;
+}
+
+@media (min-width: 1200px) {
+  h5::after {
+    left: 45%;
+  }
 }
 
 h6 {
