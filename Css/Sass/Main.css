@@ -578,7 +578,7 @@ body {
   animation: grandi 1s linear forwards;
   transform-origin: bottom;
   background: linear-gradient(160deg, #FF79DA, #9356DC);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

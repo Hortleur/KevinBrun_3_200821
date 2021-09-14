@@ -175,7 +175,7 @@ body{
     animation: grandi 1s linear forwards;
     transform-origin: bottom;
     background: $grad1;
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @keyframes grandi {
