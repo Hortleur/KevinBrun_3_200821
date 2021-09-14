@@ -759,9 +759,7 @@ body {
 
 .coeur:hover > .plein {
   -webkit-animation: grandi 1s linear forwards;
-  -o-animation: grandi 1s linear forwards;
-  -ms-animation: grandi 1s linear forwards;
-      animation: grandi 1s linear forwards;
+          animation: grandi 1s linear forwards;
   -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
           transform-origin: bottom;
