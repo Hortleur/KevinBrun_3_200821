@@ -15,6 +15,9 @@
     @include ecran(desktop){
         width: 15%;
     }
+    @include ecran(tablette){
+        width: 25%;
+    }
 }
 .btn:hover{
     opacity: 0.5;
