@@ -176,7 +176,9 @@ body{
     transform-origin: bottom;
     background: $grad1;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 @keyframes grandi {
     0%{
