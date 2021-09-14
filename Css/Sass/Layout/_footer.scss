@@ -5,6 +5,9 @@ footer{
     .footer{
         margin-left: 10px;
     }
+    @include ecran(desktop){
+        text-align: center;
+    }
 }
 .footer{
     h4{
@@ -32,5 +35,14 @@ footer{
     }
     a:hover > p, a:hover > i{
         color: $prim;
+    }
+    @include ecran(desktop){
+        ol{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            
+        }
     }
 }

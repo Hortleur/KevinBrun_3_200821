@@ -74,3 +74,13 @@
     margin-right: 10px;
     padding: 3px 7px;
 }
+
+@mixin ecran($size) {
+    @if $size == phone{
+      @media (max-width: 599px) { @content; }
+    } @else if $size == tablette {
+      @media (min-width: 900px) { @content; }
+    } @else if $size == desktop {
+      @media (min-width: 1200px) { @content; }
+    }
+  }

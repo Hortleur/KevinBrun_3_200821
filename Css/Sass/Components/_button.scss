@@ -12,6 +12,9 @@
     text-align: center;
     text-decoration: none;
     padding: 15px 0;
+    @include ecran(desktop){
+        width: 15%;
+    }
 }
 .btn:hover{
     opacity: 0.5;

@@ -74,6 +74,12 @@ h3 {
   font-weight: bold;
 }
 
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1.5em;
+  }
+}
+
 h5 {
   margin: 30px 0px;
   position: relative;
@@ -228,6 +234,12 @@ header .logo {
   padding: 15px 0;
 }
 
+@media (min-width: 1200px) {
+  .btn {
+    width: 15%;
+  }
+}
+
 .btn:hover {
   opacity: 0.5;
   transition: 300ms;
@@ -247,6 +259,12 @@ footer {
 
 footer .footer {
   margin-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    text-align: center;
+  }
 }
 
 .footer h4 {
@@ -282,6 +300,15 @@ footer .footer {
   color: #9356DC;
 }
 
+@media (min-width: 1200px) {
+  .footer ol {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -297,6 +324,12 @@ html {
 
 .mainAccueil {
   max-width: 1440px;
+}
+
+@media (min-width: 1200px) {
+  .mainAccueil {
+    margin: 0 auto;
+  }
 }
 
 .search {
@@ -362,6 +395,20 @@ html {
   transition: 500ms;
 }
 
+@media (min-width: 1200px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+  .fonctionnement ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  .fonctionnement ul li {
+    margin: 30px 30px 0 30px;
+  }
+}
+
 .fonctionnementContent {
   display: flex;
 }
@@ -405,6 +452,12 @@ html {
   box-shadow: 0 0 6px 2px #99E2D0;
 }
 
+@media (min-width: 1200px) {
+  .restaurants h2 {
+    text-align: center;
+  }
+}
+
 .restaurants picture {
   display: block;
   height: 250px;
@@ -416,6 +469,13 @@ html {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+@media (min-width: 1200px) {
+  .restaurants picture {
+    height: 300px;
+    width: 600px;
+  }
 }
 
 .restaurants .nouveau {
@@ -443,6 +503,14 @@ html {
 
 .restaurants .desc i {
   font-size: 1.5em;
+}
+
+@media (min-width: 1200px) {
+  .restoCards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 }
 
 .vide {

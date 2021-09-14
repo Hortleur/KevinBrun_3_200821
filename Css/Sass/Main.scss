@@ -21,6 +21,9 @@ html{
 }
 .mainAccueil{
     max-width: 1440px;
+    @include ecran(desktop){
+        margin: 0 auto;
+    }
 }
 
 .search{
@@ -68,6 +71,19 @@ html{
         color: $prim;
         transition: 500ms;
     }
+    @include ecran(desktop){
+        h2{
+            text-align: center;
+        }
+        ul{
+            display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        li{
+            margin: 30px 30px 0 30px;
+        }
+        }
+    }
 }
 
 
@@ -87,11 +103,20 @@ html{
 }
 .restaurants{
     @include restaurants;
+    @include ecran(desktop){
+        h2{
+            text-align: center;
+        }
+    }
     picture{
         display: block;
         height: 250px;
         img{
             @include img;
+        }
+        @include ecran(desktop){
+            height: 300px;
+            width: 600px;
         }
     }
     .nouveau{
@@ -116,6 +141,13 @@ html{
         i{
             font-size: 1.5em;
         }
+    }
+}
+.restoCards{
+    @include ecran(desktop){
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
 }
 .vide{
