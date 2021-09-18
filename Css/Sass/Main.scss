@@ -1,5 +1,6 @@
 @import "Base/minireset";
 @import "Base/font";
+@import "Utils/functions";
 @import "utils/variables";
 @import "Utils/mixins";
 @import "base/titles";
@@ -66,34 +67,8 @@ body{
     li{
         @include listAcceuil;
     }
-    li:hover{
-        background-color: lighten($prim, 35);
-        transition: 500ms;
-    }
-    li:hover > div i{
-        color: $prim;
-        transition: 500ms;
-    }
-    @include ecran(desktop){
-        h2{
-            text-align: center;
-        }
-        ul{
-            display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        li{
-            margin: 30px 30px 0 30px;
-        }
-        }
-    }
-    @include ecran(tablette){
-        h2{
-            text-align: center;
-        }
-        margin: 30px auto;
-        width: 80%;
-    }
+    @include listehover;
+    @include listAcceuilScreens;
 }
 
 
@@ -169,30 +144,9 @@ body{
     font-size: 1.5em;
 }
 .coeur:hover > .plein{
-    animation: grandi 1s linear forwards;
-    transform-origin: bottom;
-    background: $grad1;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include coeur
 }
-@keyframes grandi {
-    0%{
-        transform: scale(0);
-    }
-    25%{
-        transform: scale(0.25);
-    }
-    50%{
-        transform: scale(0.5);
-    }
-    75%{
-        transform: scale(0.75);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
+
 .nomRestaurant{
     font-family: "Shrikhand", sans-serif;
     font-size: 1.3rem;
@@ -202,6 +156,9 @@ body{
     padding-right: 20px;
     i{
         font-size: 1.8rem;
+    }
+    @include ecran(desktop){
+        padding: 0 80px;
     }
 }
 .restoImg{
@@ -228,7 +185,7 @@ body{
     margin: 20px 0;
 }
 .menu{
-    @media  screen and (min-width: 992px) {
+    @include ecran(desktop) {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -245,8 +202,8 @@ body{
     @include cardShadows;
     @include slide;
 
-    @media screen and (min-width: 992px) {
-        width: 120%;
+    @include ecran(desktop) {
+        width: 20em;
     }
 }
 .nomPlat{

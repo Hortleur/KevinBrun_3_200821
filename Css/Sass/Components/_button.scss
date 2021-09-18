@@ -1,17 +1,5 @@
 .btn{
-    margin-top: 20px;
-    width: 50%;
-    font-size: 0.9em;
-    font-weight: bold;
-    height: 50px;
-    border-radius: 40px;
-    border: none;
-    background: $grad1;
-    margin-bottom: 40px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px 0;
+    @include bouton;
     @include ecran(desktop){
         width: 15%;
     }

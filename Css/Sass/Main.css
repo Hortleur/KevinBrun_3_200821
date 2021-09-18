@@ -59,14 +59,30 @@ body {
 
 /*Colors*/
 /*fleche retour*/
+/*media queries*/
+/*box-shadow*/
+/*liste*/
+/*animation*/
 h1 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 1.8em;
+  }
 }
 
 h2 {
   font-size: 1.3em;
   font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 1.6em;
+  }
 }
 
 h3 {
@@ -96,7 +112,7 @@ h5::after {
   position: absolute;
   left: 0;
   bottom: -5px;
-  width: 20%;
+  width: 4em;
   height: 2px;
   background-color: #99E2D0;
   transform: scaleX(0.5);
@@ -311,11 +327,13 @@ footer .footer {
 
 .footer .fa-utensils {
   margin-right: 9px;
+  align-self: center;
 }
 
 .footer .fa-hands-helping {
   font-size: 0.7rem;
   margin-right: 5px;
+  align-self: center;
 }
 
 .footer a:hover > p, .footer a:hover > i {
@@ -420,6 +438,13 @@ body {
   height: 90px;
 }
 
+@media (min-width: 600px) {
+  .fonctionnement li {
+    margin: 30px auto;
+    width: 80%;
+  }
+}
+
 .fonctionnement li:hover {
   background-color: #f2eafb;
   transition: 500ms;
@@ -428,6 +453,12 @@ body {
 .fonctionnement li:hover > div i {
   color: #9356DC;
   transition: 500ms;
+}
+
+@media (min-width: 600px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -441,16 +472,6 @@ body {
   }
   .fonctionnement ul li {
     margin: 30px 30px 0 30px;
-  }
-}
-
-@media (min-width: 600px) {
-  .fonctionnement {
-    margin: 30px auto;
-    width: 80%;
-  }
-  .fonctionnement h2 {
-    text-align: center;
   }
 }
 
@@ -607,6 +628,12 @@ body {
   font-size: 1.8rem;
 }
 
+@media (min-width: 1200px) {
+  .nomRestaurant {
+    padding: 0 80px;
+  }
+}
+
 .restoImg {
   margin-bottom: -40px;
   height: 400px;
@@ -635,7 +662,7 @@ body {
   margin: 20px 0;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 1200px) {
   .menu {
     display: flex;
     flex-flow: row nowrap;
@@ -666,9 +693,9 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 1200px) {
   .menuItem {
-    width: 120%;
+    width: 20em;
   }
 }
 

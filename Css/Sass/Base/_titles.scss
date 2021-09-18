@@ -1,10 +1,16 @@
 h1{
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: bold;
+    @include ecran(desktop){
+        font-size: 1.8em;
+    }
 }
 h2{
     font-size: 1.3em;
     font-weight: bold; 
+    @include ecran(desktop){
+        font-size: 1.6em;
+    }
 }
 h3{
     font-size: 1.1em;
@@ -28,7 +34,7 @@ h5::after{
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 20%;
+    width: 4em;
     height: 2px;
     background-color: $third;
     transform: scaleX(0.5);

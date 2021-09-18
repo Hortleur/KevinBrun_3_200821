@@ -31,10 +31,12 @@ footer{
     }
     .fa-utensils{
         margin-right: 9px;
+        align-self: center;
     }
     .fa-hands-helping{
         font-size: 0.7rem;
         margin-right: 5px;
+        align-self: center;
     }
     a:hover > p, a:hover > i{
         color: $prim;

@@ -1,6 +1,25 @@
+/*media queries*/
+@mixin ecran($size) {
+    @if $size == phone{
+      @media (max-width: 599px) { @content; }
+    } @else if $size == tablette {
+      @media (min-width: 600px) { @content; }
+    } @else if $size == desktop {
+      @media (min-width: 1200px) { @content; }
+    }
+  }
+/*box-shadow*/
 @mixin header-shadow {
     box-shadow: 0px 7px 9px -6px rgb(116, 115, 115);
 }
+@mixin cardShadows {
+    box-shadow: 0 0 6px 2px rgba(105, 103, 103, 0.24);
+}
+@mixin coeur_shadow {
+    box-shadow: 0 0 6px 2px $prim;
+}
+
+/*liste*/
 @mixin listAcceuil {
     display: flex;
         align-items: center;
@@ -10,13 +29,55 @@
         border-radius: 30px;
         width: 90%;
         height: 90px;
+
+        @include ecran(tablette){
+            margin: 30px auto;
+            width: 80%;
+        }
 }
-@mixin cardShadows {
-    box-shadow: 0 0 6px 2px rgba(105, 103, 103, 0.24);
+@mixin listAcceuilScreens {
+        @include ecran(tablette){
+                h2{
+                    text-align: center;
+                }
+        }
+
+        @include ecran(desktop){
+            h2{
+                text-align: center;
+            }
+            ul{
+                display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            li{
+                margin: 30px 30px 0 30px;
+            }
+            }
+        }
 }
-@mixin coeur_shadow {
-    box-shadow: 0 0 6px 2px $prim;
+@mixin listehover{
+    li:hover{
+        background-color: lighten($prim, 35);
+        transition: 500ms;
+    }
+    li:hover > div i{
+        color: $prim;
+        transition: 500ms;
+    }
 }
+@mixin num{
+    transform: translateX(-10px);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: $prim;
+    color: white;
+    margin-right: 10px;
+    padding: 3px 7px;
+}
+
+
+/*animation*/
 @mixin slide{
     animation: slide 1s ease-in both;
     @keyframes slide {
@@ -32,7 +93,31 @@
         }
     }
 }
-
+@mixin coeur{
+    animation: grandi 1s linear forwards;
+    transform-origin: bottom;
+    background: $grad1;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @keyframes grandi {
+        0%{
+            transform: scale(0);
+        }
+        25%{
+            transform: scale(0.25);
+        }
+        50%{
+            transform: scale(0.5);
+        }
+        75%{
+            transform: scale(0.75);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+}
 
 
 @mixin img {
@@ -62,22 +147,19 @@
         }
     }
 }
-@mixin num{
-    transform: translateX(-10px);
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background-color: $prim;
-    color: white;
-    margin-right: 10px;
-    padding: 3px 7px;
-}
 
-@mixin ecran($size) {
-    @if $size == phone{
-      @media (max-width: 599px) { @content; }
-    } @else if $size == tablette {
-      @media (min-width: 600px) { @content; }
-    } @else if $size == desktop {
-      @media (min-width: 1200px) { @content; }
-    }
-  }
+@mixin bouton{
+    margin-top: 20px;
+    width: 50%;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    background: $grad1;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 0;
+}
