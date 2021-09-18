@@ -12,7 +12,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    max-width: 1440px;
     margin: 0 auto;
 }
 .mainPages{
@@ -166,8 +165,10 @@ body{
 }
 .vide{
     position: relative;
+    font-size: 2rem;
 }
 .plein{
+    font-size: 0.9em;
     position: absolute;
     color: transparent
 }
@@ -178,7 +179,6 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 @keyframes grandi {
     0%{
@@ -210,8 +210,14 @@ body{
 }
 .restoImg{
     margin-bottom: -40px;
+    height: 400px;
     z-index: -1;
     position: relative;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 .resto_note{
     @include ecran(desktop){
@@ -241,7 +247,8 @@ body{
     line-height: 1.5;
     overflow: hidden;
     @include cardShadows;
-    @include fade;
+    @include slide;
+
     @media screen and (min-width: 992px) {
         width: 120%;
     }
@@ -249,7 +256,7 @@ body{
 .nomPlat{
     display: flex;
     flex-flow: column nowrap;
-    @include slide;
+
     padding: 8px;
     overflow: hidden;
 
@@ -266,7 +273,6 @@ body{
     display: flex;
     font-weight: bold;
     justify-content: center;
-    @include slide;
     p{
         align-self: flex-end;
         padding-bottom: 8px;
