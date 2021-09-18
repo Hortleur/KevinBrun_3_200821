@@ -547,10 +547,15 @@ body {
 }
 
 .restaurants .desc .vide {
+  position: relative;
   font-size: 1.5em;
+  transform: scale(1.1);
 }
 
 .restaurants .desc .plein {
+  font-size: 0.9em;
+  position: absolute;
+  color: transparent;
   font-size: 1.5em;
 }
 
@@ -560,17 +565,6 @@ body {
     flex-flow: row wrap;
     justify-content: space-around;
   }
-}
-
-.vide {
-  position: relative;
-  font-size: 2rem;
-}
-
-.plein {
-  font-size: 0.9em;
-  position: absolute;
-  color: transparent;
 }
 
 .coeur:hover > .plein {

@@ -149,9 +149,14 @@ body{
         padding: 10px;
         height: 80px;
         .vide{
+            position: relative;
             font-size: 1.5em;
+            transform: scale(1.1);
         }
         .plein{
+            font-size: 0.9em;
+            position: absolute;
+            color: transparent;
             font-size: 1.5em;
         }
     }
@@ -163,15 +168,7 @@ body{
         justify-content: space-around;
     }
 }
-.vide{
-    position: relative;
-    font-size: 2rem;
-}
-.plein{
-    font-size: 0.9em;
-    position: absolute;
-    color: transparent
-}
+
 .coeur:hover > .plein{
     animation: grandi 1s linear forwards;
     transform-origin: bottom;
