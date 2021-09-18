@@ -148,17 +148,6 @@ body{
         justify-content: space-between;
         padding: 10px;
         height: 80px;
-        .vide{
-            position: relative;
-            font-size: 1.5em;
-            transform: scale(1.1);
-        }
-        .plein{
-            font-size: 0.9em;
-            position: absolute;
-            color: transparent;
-            font-size: 1.5em;
-        }
     }
 }
 .restoCards{
@@ -168,7 +157,17 @@ body{
         justify-content: space-around;
     }
 }
-
+.vide{
+    position: relative;
+    font-size: 1.5em;
+    transform: scale(1.1);
+}
+.plein{
+    font-size: 0.9em;
+    position: absolute;
+    color: transparent;
+    font-size: 1.5em;
+}
 .coeur:hover > .plein{
     animation: grandi 1s linear forwards;
     transform-origin: bottom;

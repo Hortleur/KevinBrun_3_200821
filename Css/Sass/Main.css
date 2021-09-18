@@ -546,25 +546,25 @@ body {
   height: 80px;
 }
 
-.restaurants .desc .vide {
-  position: relative;
-  font-size: 1.5em;
-  transform: scale(1.1);
-}
-
-.restaurants .desc .plein {
-  font-size: 0.9em;
-  position: absolute;
-  color: transparent;
-  font-size: 1.5em;
-}
-
 @media (min-width: 1200px) {
   .restoCards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
   }
+}
+
+.vide {
+  position: relative;
+  font-size: 1.5em;
+  transform: scale(1.1);
+}
+
+.plein {
+  font-size: 0.9em;
+  position: absolute;
+  color: transparent;
+  font-size: 1.5em;
 }
 
 .coeur:hover > .plein {
