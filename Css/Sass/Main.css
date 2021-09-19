@@ -74,7 +74,7 @@ h1 {
   font-weight: bold;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   h1 {
     font-size: 1.8em;
   }
@@ -85,7 +85,7 @@ h2 {
   font-weight: bold;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   h2 {
     font-size: 1.6em;
   }
@@ -96,7 +96,7 @@ h3 {
   font-weight: bold;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   h4 {
     font-size: 1.5em;
   }
@@ -107,7 +107,7 @@ h5 {
   position: relative;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   h5 {
     text-align: center;
   }
@@ -125,7 +125,7 @@ h5::after {
   transform-origin: left;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   h5::after {
     left: 45%;
   }
@@ -266,7 +266,7 @@ header .logo {
   padding: 15px 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .btn {
     width: 15%;
   }
@@ -299,7 +299,7 @@ footer .footer {
   margin-left: 10px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   footer {
     text-align: center;
   }
@@ -346,7 +346,7 @@ footer .footer {
   color: #9356DC;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .footer ol {
     display: flex;
     flex-flow: row nowrap;
@@ -385,7 +385,7 @@ body {
   max-width: 1440px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .mainAccueil {
     margin: 0 auto;
   }
@@ -467,7 +467,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .fonctionnement h2 {
     text-align: center;
   }
@@ -524,7 +524,7 @@ body {
   box-shadow: 0 0 6px 2px #99E2D0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .restaurants h2 {
     text-align: center;
   }
@@ -543,7 +543,7 @@ body {
   border-top-right-radius: 15px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .restaurants picture {
     height: 300px;
     width: 600px;
@@ -573,7 +573,7 @@ body {
   height: 80px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .restoCards {
     display: flex;
     flex-flow: row wrap;
@@ -634,7 +634,7 @@ body {
   font-size: 1.8rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .nomRestaurant {
     padding: 0 80px;
   }
@@ -661,7 +661,7 @@ body {
   margin: 20px 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .menu {
     display: flex;
     flex-flow: row nowrap;
@@ -692,7 +692,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .menuItem {
     width: 20em;
   }
