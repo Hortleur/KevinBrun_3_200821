@@ -4,11 +4,11 @@
         width: 15%;
     }
     @include ecran(tablette){
-        width: 25%;
+        width: 45%;
     }
 }
 .btn:hover{
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 300ms;
     @include header-shadow;
 }

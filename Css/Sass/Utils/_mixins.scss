@@ -8,6 +8,253 @@
       @media (min-width: 1200px) { @content; }
     }
   }
+
+  /*main page*/
+@mixin mainPages {
+    background-color: $back;
+    padding: 30px 10px;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* recherche*/
+@mixin recherche {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    background-color: #eaeaea;
+    input{
+        border: none;
+        background-color: #eaeaea;
+    }
+}
+
+/* presentation*/
+@mixin presentation{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: $back;
+    h1{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: bold;
+        padding: 10px 50px;
+    }
+    p{
+        margin-top: 10px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    a{
+        align-self: center;
+    }
+}
+
+/* fonctionnement*/
+@mixin fonctionnement {
+    margin: 50px 0 50px 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    li{
+        @include listAcceuil;
+    }
+    @include listehover;
+    @include listAcceuilScreens;
+}
+
+@mixin fonctionnementContent {
+    display: flex;
+    i{
+        margin-right: 20px;
+        font-size: 1.2em;
+    }
+    p{
+        font-weight: bold
+    }
+}
+
+/* restaurants*/
+@mixin restaurantsAll {
+    @include restaurants;
+    @include ecran(desktop){
+        h2{
+            text-align: center;
+        }
+    }
+    picture{
+        display: block;
+        height: 250px;
+        img{
+            @include img;
+        }
+        @include ecran(desktop){
+            height: 300px;
+            width: 600px;
+        }
+    }
+    .nouveau{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        padding: 5px 10px;
+        background-color: $third;
+        border-radius: 3px;
+        p{
+            color: darken($third, 40%);
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+    }
+    .desc{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        height: 80px;
+    }
+}
+
+@mixin restaurants{
+    background-color: $back;
+    padding: 50px 20px;
+    .cards{
+        @include cards;
+        @include cardShadows;
+        &:hover{
+            box-shadow: 0 0 6px 2px $third;
+        }
+    }
+}
+
+@mixin nomResto {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 20px;
+    i{
+        font-size: 1.8rem;
+    }
+    @include ecran(desktop){
+        padding: 0 80px;
+    }
+}
+
+@mixin restoImg {
+    margin-bottom: -40px;
+    height: 400px;
+    z-index: -1;
+    position: relative;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/*Menu*/
+
+@mixin menuItem {
+    display: flex; 
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;                
+    margin-bottom: 10px;
+    line-height: 1.5;
+    overflow: hidden;
+    @include cardShadows;
+    @include slide;
+
+    @include ecran(desktop) {
+        width: 20em;
+    }
+}
+
+@mixin nomPlat {
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding: 8px;
+    overflow: hidden;
+
+    h6, p{
+        white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    p{
+        font-size: 0.9em;
+    }
+}
+
+@mixin prix {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    p{
+        align-self: flex-end;
+        padding-bottom: 8px;
+    }
+}
+
+@mixin check {
+    width: 0;
+    overflow: hidden;
+    background-color: $third;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: width 0.6s;
+    color: white;
+    i{
+        transition: 0.6s;
+        font-size: 1.4em;
+    }
+}
+/*coeur*/
+@mixin coeur{
+    animation: grandi 1s linear forwards;
+    transform-origin: bottom;
+    background: $grad1;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @keyframes grandi {
+        0%{
+            transform: scale(0);
+        }
+        25%{
+            transform: scale(0.25);
+        }
+        50%{
+            transform: scale(0.5);
+        }
+        75%{
+            transform: scale(0.75);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+}
+
+@mixin vide {
+    position: relative;
+    font-size: 1.5em;
+    transform: scale(1.1);
+}
+
+@mixin plein{
+    font-size: 0.9em;
+    position: absolute;
+    color: transparent;
+    font-size: 1.5em;
+}
 /*box-shadow*/
 @mixin header-shadow {
     box-shadow: 0px 7px 9px -6px rgb(116, 115, 115);
@@ -93,31 +340,7 @@
         }
     }
 }
-@mixin coeur{
-    animation: grandi 1s linear forwards;
-    transform-origin: bottom;
-    background: $grad1;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    @keyframes grandi {
-        0%{
-            transform: scale(0);
-        }
-        25%{
-            transform: scale(0.25);
-        }
-        50%{
-            transform: scale(0.5);
-        }
-        75%{
-            transform: scale(0.75);
-        }
-        100%{
-            transform: scale(1);
-        }
-    }
-}
+
 
 
 @mixin img {
@@ -136,21 +359,11 @@
         border-radius: 15px;
         position: relative;
 }
-@mixin restaurants{
-    background-color: $back;
-    padding: 50px 20px;
-    .cards{
-        @include cards;
-        @include cardShadows;
-        &:hover{
-            box-shadow: 0 0 6px 2px $third;
-        }
-    }
-}
+
 
 @mixin bouton{
     margin-top: 20px;
-    width: 50%;
+    width: 60%;
     font-size: 0.9em;
     font-weight: bold;
     height: 50px;

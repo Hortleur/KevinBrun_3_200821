@@ -58,8 +58,14 @@ body {
 }
 
 /*Colors*/
-/*fleche retour*/
 /*media queries*/
+/*main page*/
+/* recherche*/
+/* presentation*/
+/* fonctionnement*/
+/* restaurants*/
+/*Menu*/
+/*coeur*/
 /*box-shadow*/
 /*liste*/
 /*animation*/
@@ -246,7 +252,7 @@ header .logo {
 
 .btn {
   margin-top: 20px;
-  width: 50%;
+  width: 60%;
   font-size: 0.9em;
   font-weight: bold;
   height: 50px;
@@ -268,12 +274,12 @@ header .logo {
 
 @media (min-width: 600px) {
   .btn {
-    width: 25%;
+    width: 45%;
   }
 }
 
 .btn:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   transition: 300ms;
   box-shadow: 0px 7px 9px -6px #747373;
 }
@@ -645,13 +651,6 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-@media (min-width: 1200px) {
-  .resto_note {
-    margin-bottom: -500px;
-    transform: translateY(-400px);
-  }
 }
 
 .note_header {

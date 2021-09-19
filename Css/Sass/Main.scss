@@ -1,6 +1,5 @@
 @import "Base/minireset";
 @import "Base/font";
-@import "Utils/functions";
 @import "utils/variables";
 @import "Utils/mixins";
 @import "base/titles";
@@ -16,12 +15,7 @@ body{
     margin: 0 auto;
 }
 .mainPages{
-    background-color: $back;
-    padding: 30px 10px;
-    border-top-right-radius: 24px;
-    border-top-left-radius: 24px;
-    max-width: 1440px;
-    margin: 0 auto;
+    @include mainPages;
 }
 .mainAccueil{
     max-width: 1440px;
@@ -31,99 +25,25 @@ body{
 }
 
 .search{
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid transparent;
-    background-color: #eaeaea;
-    input{
-        border: none;
-        background-color: #eaeaea;
-    }
+    @include recherche;
 }
 .presentation{
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: $back;
-    h1{
-        text-align: center;
-        margin-top: 30px;
-        font-weight: bold;
-        padding: 10px 50px;
-    }
-    p{
-        margin-top: 10px;
-        text-align: center;
-        padding: 0 20px;
-    }
-    a{
-        align-self: center;
-    }
+    @include presentation;
 }
 .fonctionnement{
-    margin: 50px 0 50px 30px;
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: white;
-    li{
-        @include listAcceuil;
-    }
-    @include listehover;
-    @include listAcceuilScreens;
+    @include fonctionnement;
 }
 
 
 .fonctionnementContent{
-    display: flex;
-    i{
-        margin-right: 20px;
-        font-size: 1.2em;
-    }
-    p{
-        font-weight: bold
-    }
+    @include fonctionnementContent;
 }
 
 .num{
     @include num;
 }
 .restaurants{
-    @include restaurants;
-    @include ecran(desktop){
-        h2{
-            text-align: center;
-        }
-    }
-    picture{
-        display: block;
-        height: 250px;
-        img{
-            @include img;
-        }
-        @include ecran(desktop){
-            height: 300px;
-            width: 600px;
-        }
-    }
-    .nouveau{
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        padding: 5px 10px;
-        background-color: $third;
-        border-radius: 3px;
-        p{
-            color: darken($third, 40%);
-            font-weight: bold;
-            font-size: 0.8em;
-        }
-    }
-    .desc{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        height: 80px;
-    }
+    @include restaurantsAll;
 }
 .restoCards{
     @include ecran(desktop){
@@ -133,51 +53,22 @@ body{
     }
 }
 .vide{
-    position: relative;
-    font-size: 1.5em;
-    transform: scale(1.1);
+    @include vide;
 }
 .plein{
-    font-size: 0.9em;
-    position: absolute;
-    color: transparent;
-    font-size: 1.5em;
+    @include plein;
 }
 .coeur:hover > .plein{
     @include coeur
 }
 
 .nomRestaurant{
-    font-family: "Shrikhand", sans-serif;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-right: 20px;
-    i{
-        font-size: 1.8rem;
-    }
-    @include ecran(desktop){
-        padding: 0 80px;
-    }
+    @include nomResto;
 }
 .restoImg{
-    margin-bottom: -40px;
-    height: 400px;
-    z-index: -1;
-    position: relative;
-    img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+    @include restoImg;
 }
-.resto_note{
-    @include ecran(desktop){
-        margin-bottom: -500px;
-        transform: translateY(-400px);
-    }
-}
+
 .note_header{
     background-color: white;
 }
@@ -192,59 +83,16 @@ body{
     }
 }
 .menuItem{
-    display: flex; 
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 15px;                
-    margin-bottom: 10px;
-    line-height: 1.5;
-    overflow: hidden;
-    @include cardShadows;
-    @include slide;
-
-    @include ecran(desktop) {
-        width: 20em;
-    }
+    @include menuItem
 }
 .nomPlat{
-    display: flex;
-    flex-flow: column nowrap;
-
-    padding: 8px;
-    overflow: hidden;
-
-    h6, p{
-        white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    }
-    p{
-        font-size: 0.9em;
-    }
+    @include nomPlat
 }  
 .prix{
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-    p{
-        align-self: flex-end;
-        padding-bottom: 8px;
-    }
+    @include prix
 }
 .check{
-    width: 0;
-    overflow: hidden;
-    background-color: $third;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    transition: width 0.6s;
-    color: white;
-    i{
-        transition: 0.6s;
-        font-size: 1.4em;
-    }
+    @include check
 }
 .menuItem:hover .check{
     width: 70px;
@@ -254,12 +102,7 @@ body{
         transition:0.6s;
     }
 }
-
-@for $i from 1 to 5 {
-    .item_#{$i}{
-        animation-delay: 300ms * $i ;
-    }
-}
+@import "Utils/functions";
  
 
 
