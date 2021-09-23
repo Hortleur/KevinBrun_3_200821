@@ -1,3 +1,4 @@
+/* imports*/
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -383,6 +384,7 @@ body {
   }
 }
 
+/* recherche*/
 .search {
   padding: 10px;
   text-align: center;
@@ -395,6 +397,7 @@ body {
   background-color: #eaeaea;
 }
 
+/*presentation*/
 .presentation {
   display: flex;
   flex-flow: column nowrap;
@@ -418,6 +421,7 @@ body {
   align-self: center;
 }
 
+/*fonctionnement*/
 .fonctionnement {
   margin: 50px 0 50px 30px;
   display: flex;
@@ -496,6 +500,7 @@ body {
   padding: 3px 7px;
 }
 
+/*restaurants*/
 .restaurants {
   background-color: #f6f6f6;
   padding: 50px 20px;
@@ -649,10 +654,7 @@ body {
   object-fit: cover;
 }
 
-.note_header {
-  background-color: white;
-}
-
+/*menus*/
 .menuPart {
   margin: 20px 0;
 }

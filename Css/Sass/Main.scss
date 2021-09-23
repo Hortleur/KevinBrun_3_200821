@@ -1,3 +1,4 @@
+            /* imports*/
 @import "Base/minireset";
 @import "Base/font";
 @import "utils/variables";
@@ -28,7 +29,7 @@ body{
         margin: 0 auto;
     }
 }
-
+            /* recherche*/
 .search{
     padding: 10px;
     text-align: center;
@@ -39,6 +40,7 @@ body{
         background-color: #eaeaea;
     }
 }
+            /*presentation*/
 .presentation{
     display: flex;
     flex-flow: column nowrap;
@@ -58,6 +60,7 @@ body{
         align-self: center;
     }
 }
+            /*fonctionnement*/
 .fonctionnement{
     margin: 50px 0 50px 30px;
     display: flex;
@@ -126,6 +129,7 @@ body{
     margin-right: 10px;
     padding: 3px 7px;
 }
+            /*restaurants*/
 .restaurants{
     background-color: $back;
     padding: 50px 20px;
@@ -256,9 +260,7 @@ body{
     }
 }
 
-.note_header{
-    background-color: white;
-}
+            /*menus*/
 .menuPart{
     margin: 20px 0;
 }
