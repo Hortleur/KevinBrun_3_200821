@@ -4,8 +4,8 @@
   "description": "Projet 3 Openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./css/sass/Main.scss:./css/Main.css",
-    "prefix": "postcss ./css/sass/Main.css --use autoprefixer -d ./css/sass/prefixed/"
+    "sass": "sass --watch ./css/sass/main.scss:./css/main.css --style compressed",
+    "prefix": "postcss ./css/sass/main.min.css --use autoprefixer -d ./css/sass/prefixed/"
   },
   "author": "Brun Kevin",
   "license": "ISC",

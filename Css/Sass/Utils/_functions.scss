@@ -1,5 +1,0 @@
-@for $i from 1 to 5 {
-    .item_#{$i}{
-        animation-delay: 300ms * $i ;
-    }
-}
